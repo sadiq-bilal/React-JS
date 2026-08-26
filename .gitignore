@@ -7,7 +7,6 @@ TodoApp/
 # Old root-level React project files
 /src/
 /public/
-package.json
 package-lock.json
 index.html
 index.css
