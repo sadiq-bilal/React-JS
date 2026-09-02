@@ -1,15 +1,14 @@
-node_modules/
-dist/
-.env
-.parcel-cache/
-TodoApp/
+# Dependencies
+**/node_modules/
 
-# Old root-level React project files
-/src/
-/public/
-package-lock.json
-index.html
-index.css
-eslint.config.js
-vite.config.js
-README.md
+# Build output
+**/dist/
+
+# Environment variables
+**/.env
+**/.env.*
+
+# Parcel cache
+**/.parcel-cache/
+
+# Keep source files, index.html and index.css
