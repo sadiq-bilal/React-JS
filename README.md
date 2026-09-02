@@ -202,36 +202,6 @@ Projects will be added to the appropriate level as I progress.
 
 ---
 
-# 🔄 Project Development Process
-
-For each project, I will follow a practical development process:
-
-```text
-Learn a Concept
-      ↓
-Plan the Project
-      ↓
-Build the Basic Version
-      ↓
-Apply React Concepts
-      ↓
-Add More Features
-      ↓
-Improve the UI
-      ↓
-Make it Responsive
-      ↓
-Refactor the Code
-      ↓
-Test the Application
-      ↓
-Push to GitHub
-      ↓
-Document the Project
-```
-
----
-
 # 🎯 Goals
 
 Through this repository, I aim to:
@@ -257,26 +227,6 @@ Through this repository, I aim to:
 | 🔴 Advanced     | 🔒 Upcoming    |
 
 This section will be updated as I continue building projects.
-
----
-
-# 💻 Running the Projects
-
-Each project may have its own setup instructions.
-
-Generally:
-
-```bash
-npm install
-```
-
-Then start the development server:
-
-```bash
-npm run dev
-```
-
-The project can then be opened using the local development URL provided by Vite.
 
 ---
 
