@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  min-height: 100vh;
+}
+
+/* Main Container */
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 70px auto;
+}
+
+/* Heading */
+.container h1 {
+  text-align: center;
+  color: #38bdf8;
+  font-size: 38px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Each Accordion */
+.container > div {
+  margin-bottom: 18px;
+}
+
+/* Question */
+.child {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 20px 25px;
+  cursor: pointer;
+}
+
+/* Question Hover */
+.child:hover {
+  border-color: #38bdf8;
+  background: #263449;
+}
+
+/* Question Text */
+.child p {
+  color: #f8fafc;
+  font-size: 18px;
+  font-weight: 600;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Arrow */
+.child span {
+  color: #38bdf8;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Answer */
+.child + p {
+  background: #172033;
+  color: #cbd5e1;
+
+  padding: 20px 25px;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  border-bottom: 0.5px solid pink;
+  border-radius: 5px 5px 10px 10px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+    margin: 40px auto;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .child {
+    padding: 17px;
+  }
+
+  .child p {
+    font-size: 16px;
+  }
+
+  .child + p {
+    font-size: 14px;
+    padding: 17px;
+  }
+}
