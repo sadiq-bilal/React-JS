@@ -1,16 +1,59 @@
-# React + Vite
+# RestaurantMenu_App 🍽️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small **Restaurant Menu App** built using **React.js** to practice displaying and navigating restaurant menu data.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Display restaurant menu
+* Display food categories
+* View menu items
+* Navigate between pages
+* Responsive UI
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript
+* HTML
+* CSS
+* React Router
 
-## Expanding the ESLint configuration
+## 📚 Concepts Covered
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* React Components
+* JSX
+* Props
+* `useState` Hook
+* `useParams` Hook
+* Array `.map()`
+* Conditional Rendering
+* Dynamic Data Rendering
+* Event Handling
+* React Router
+* Routing & Navigation
+* Component Reusability
+* CSS Styling
+
+## 📂 Project Structure
+
+```text
+RestaurantMenu_App/
+├── src/
+│   ├── Components/
+│   ├── App.jsx
+│   └── main.jsx
+├── public/
+├── package.json
+└── README.md
+```
+
+## ▶️ Run the Project
+
+```bash
+npm install
+npm start
+```
+
+## 🎯 Purpose
+
+This mini project was created to practice **React fundamentals, component-based development, props, hooks, routing, and dynamic data rendering**.
