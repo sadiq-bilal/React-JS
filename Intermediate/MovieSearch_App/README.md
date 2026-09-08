@@ -1,16 +1,110 @@
-# React + Vite
+# Movie Search App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Movie Search App** built using **React.js**.
+Users can search for movies and view movie information from a list of movies.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* Search movies by title
+* Display movies in cards
+* Show movie poster
+* Show movie title
+* Display "No Movies Found" when there are no matching movies
+* Responsive user interface
 
-## React Compiler
+## 🛠️ Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React.js
+* JavaScript
+* HTML
+* CSS
+* React Hooks (`useState`)
 
-## Expanding the ESLint configuration
+## 📌 Concepts Covered
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project helped me practice:
+
+* React Components
+* JSX
+* `useState` Hook
+* Props
+* Event Handling
+* Controlled Inputs
+* Search Functionality
+* Filtering with `filter()`
+* Rendering Lists with `map()`
+* Conditional Rendering
+* Arrays of Objects
+* Dynamic Data Rendering
+* Component Reusability
+* State Management
+* Basic CSS Styling
+* Responsive Design
+* React Project Folder Structure
+
+## 📂 Project Structure
+
+```text
+MovieSearch/
+│
+├── src/
+│   ├── Components/
+│   │   ├── SearchBar.jsx
+│   │   ├── MovieList.jsx
+│   │   └── MovieCard.jsx
+│   │
+│   ├── data/
+│   │   └── movies.js
+│   │
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+│
+├── public/
+├── package.json
+└── README.md
+```
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
+```
+
+### 2. Go to the project folder
+
+```bash
+cd MovieSearch
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+### 5. Open the local URL
+
+Open the URL displayed in the terminal, usually:
+
+```text
+http://localhost:5173
+```
+
+## 🎯 Project Purpose
+
+The main purpose of this project is to practice **React state management, props, search functionality, filtering, and component-based development**.
+
+## 👨‍💻 Author
+
+**Sadiq Bilal**
+
+Built as an intermediate React.js practice project.
