@@ -15,6 +15,7 @@ function CategoryFilter({category,setCategory}) {
         <option value="Clothing">Clothing</option>
         <option value="Footwear">Footwear</option>
         <option value="Accessories">Accessories</option>
+        <option value="Bags">Bags</option>
       </select>
     </div>
   )

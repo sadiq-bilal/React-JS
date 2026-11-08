@@ -1,19 +1,55 @@
-# React + Vite
+# 🛍️ ShopEase - E-Commerce Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple e-commerce website built with **React** where users can browse products, search, filter and sort them, view product details, manage a cart, and place an order.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** _add your Vercel/Netlify link here_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Screenshots
 
-## React Compiler
+_Add screenshots here (Home, Products, Cart, Checkout)_
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## 🚀 Features
 
-Note: This will impact Vite dev & build performances.
-You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
+- Home page with hero slider
+- Search products by name
+- Filter products by category
+- Sort products (price low-high / high-low, rating, A-Z, Z-A)
+- Product details page
+- Add to cart, increase/decrease quantity, remove items
+- Cart saved in `localStorage` (cart stays after page refresh)
+- Checkout form with validation
+- Order placed page
+- Profile page
+- Dark mode
+- Offline message when internet connection is lost
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- React Router
+- Context API
+- JavaScript (ES6+)
+- HTML
+- CSS
+- Vite
+
+## 📚 Concepts Covered
+
+- Components and Props
+- `useState`, `useEffect`, `useContext`
+- Context API (Cart, Theme, Online status)
+- React Router: `useParams`, `useNavigate`, `useSearchParams`
+- `map()`, `filter()`, `find()`, `reduce()`, `sort()`
+- Forms and validation
+- `localStorage`
+
+## ⚙️ Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## 👨‍💻 Author
+
+Sadiq Bilal

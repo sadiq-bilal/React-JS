@@ -14,7 +14,7 @@ function Products() {
   const [category, setCategory] = useState("All");
   const [sort, setSort] = useState("");
 
-  const categories = ["All", "Electronics", "Clothing", "Footwear", "Accessories"];
+  const categories = ["All", "Electronics", "Clothing", "Footwear", "Accessories", "Bags"];
   
   const filteredProducts = products.filter((product) => {
     const searchFilter = product.name.toLowerCase().includes(search.toLowerCase().trim())

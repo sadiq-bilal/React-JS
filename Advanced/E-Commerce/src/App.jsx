@@ -11,7 +11,7 @@ import OrderPlaced from "./Pages/OrderPlaced";
 import ProfileCard from "./Pages/ProfileCard";
 import { ThemeProvider } from "./Context/ThemeContext";
 import { OnlineProvider } from "./Context/OnlineContext";
-import OfflineMessage from "./Pages/offlineMessage";
+import OfflineMessage from "./Pages/OfflineMessage";
 
 const appRouter = createBrowserRouter([
   {

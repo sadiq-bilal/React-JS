@@ -1,5 +1,5 @@
 import App from "../App";
-import OfflineMessage from "../Pages/offlineMessage";
+import OfflineMessage from "../Pages/OfflineMessage";
 import { useOnlineStatus } from "../Context/OnlineContext";
 
 function AppContent() {

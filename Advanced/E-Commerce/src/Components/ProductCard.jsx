@@ -2,10 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { CartButton } from "./Button";
 import { useCart } from "../Context/CartContext";
-import { useParams } from "react-router-dom";
 import { QuantityButton } from "./Button";
 function ProductCard({ product }) {
-const {id} = useParams();
   const { cart } = useCart();
 
   const cartProduct = cart.find(
