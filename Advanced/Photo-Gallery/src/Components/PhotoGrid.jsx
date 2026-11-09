@@ -1,19 +1,13 @@
-import React from 'react'
-import PhotoCard from './PhotoCard'
+import PhotoCard from "./PhotoCard";
 
-function PhotoGrid({photos}) {
+function PhotoGrid({ photos }) {
   return (
-    <div className="photo-grid">
-      {photos.map((photo) => {
-        return (
-        <PhotoCard
-          key={photo.id}
-          photo ={photo}
-        />
-        )
-      })}
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      {photos.map((photo) => (
+        <PhotoCard key={photo.id} photo={photo} />
+      ))}
     </div>
-  )
+  );
 }
 
-export default PhotoGrid
+export default PhotoGrid;
