@@ -1,12 +1,8 @@
-import React from 'react'
-
-function Footer() {
+export default function Footer() {
   return (
-    <footer >
-      <p>© 2025 Weather App. All rights reserved.</p>
-      
+    <footer>
+      © {new Date().getFullYear()} Weather App · Data by{" "}
+      <a href="https://open-meteo.com" target="_blank" rel="noreferrer">Open-Meteo</a>
     </footer>
-  )
+  );
 }
-
-export default Footer

@@ -1,124 +1,29 @@
 # Weather App
 
-A simple **Weather App** built using **React.js**.
-This application displays weather information for different cities with separate sections for current weather, forecast, highlights, and air quality.
+A clean weather app built with **React + Vite + React Router**, powered by the free
+[Open-Meteo](https://open-meteo.com) APIs (no API key needed).
 
-## 🚀 Features
+## Features
+- Search any city worldwide (live suggestions) or use your current location
+- Current conditions: temperature, feels-like, humidity, wind, pressure, visibility, UV, sunrise/sunset
+- Next-24-hours strip and 7-day forecast
+- Air quality (US AQI + pollutants)
+- °C / °F toggle, light / dark theme, recent searches (saved in localStorage)
+- Loading and error states with retry
 
-* Search weather by city
-* Display current weather
-* Show temperature and weather condition
-* Display today's weather highlights
-* Show weather forecast
-* Display air quality information
-* Navigate between different pages
-* About page
-* Responsive user interface
-
-## 🛠️ Technologies Used
-
-* React.js
-* JavaScript
-* HTML
-* CSS
-* React Hooks (`useState`)
-* React Router DOM
-
-## 📌 Concepts Covered
-
-This project helped me practice:
-
-* React Components
-* JSX
-* `useState` Hook
-* Props
-* Event Handling
-* Controlled Inputs
-* Search Functionality
-* Conditional Rendering
-* Dynamic Data Rendering
-* Arrays of Objects
-* `map()` method
-* React Router
-* `Routes` and `Route`
-* Navigation between pages
-* Component Reusability
-* State Management
-* Basic CSS Styling
-* Responsive Design
-* React Project Folder Structure
-
-## 📂 Project Structure
-
-```text
-WeatherApp/
-│
-├── src/
-│   ├── Components/
-│   │   ├── Navbar.jsx
-│   │   ├── Searchbar.jsx
-│   │   ├── CurrentWeather.jsx
-│   │   ├── TodayHighlights.jsx
-│   │   ├── Forecast.jsx
-│   │   ├── AirQuality.jsx
-│   │   └── About.jsx
-│   │  
-│   ├── data/
-│   │   └── weather.js
-│   │
-│   ├── App.jsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.jsx
-│
-├── public/
-├── package.json
-└── README.md
-```
-
-## ▶️ How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone <your-repository-url>
-```
-
-### 2. Go to the project folder
-
-```bash
-cd WeatherApp
-```
-
-### 3. Install dependencies
-
+## Run
 ```bash
 npm install
+npm run dev      # http://localhost:5173
+npm run build    # production build in dist/
 ```
+Requires Node.js 20.19+ (or 22.12+).
 
-### 4. Start the development server
-
-```bash
-npm run dev
+## Structure
 ```
-
-### 5. Open the local URL
-
-Open the URL displayed in the terminal.
-
-Usually:
-
-```text
-http://localhost:5173
+src/
+  api/weather.js       Open-Meteo calls (geocoding, forecast, air quality)
+  hooks/useWeather.js  state: place, unit, recent searches, loading/error
+  components/          Navbar, SearchBar, Current, Hourly, Forecast, AirQuality, About, Footer, Status
+  utils.js             weather codes, formatting, AQI categories
 ```
-
-## 🎯 Project Purpose
-
-The main purpose of this project is to practice **React components, state management, search functionality, React Router, dynamic data rendering, and building a multi-page React application**.
-
-## 👨‍💻 Author
-
-**Sadiq Bilal**
-
-Built as an intermediate React.js practice project.
-

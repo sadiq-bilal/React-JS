@@ -1,73 +1,25 @@
-import React from "react";
-import { Link, Route, Routes } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-function Navbar({unit,setUnit}) {
+export default function Navbar({ unit, onUnit, theme, onTheme }) {
   return (
-    <nav>
-      <div className="icon">
-        <span>🌤️</span>
-        <h2>Weather App</h2>
-      </div>
-      <div className="nav-links">
-        <NavLink to="/" >Home</NavLink>
-        <NavLink to={"/forecast"} >Forecast</NavLink>
-        <NavLink to={"/airquality"} >Air Quality</NavLink>
-        <NavLink to={"/about"} >About</NavLink>
-      
-      </div>
-      
-      <div className="settings">
-        <div className="button">
-          <button className={unit === "C" ? "selected" : ""}
-            onClick={() => setUnit("C")}>°C</button>
-          <span>|</span>
-        <button className={unit === "F" ? "selected" : ""}
-            onClick={() => setUnit("F")}>F</button>
-        <button>⚙️</button>
+    <header className="navbar">
+      <div className="brand"><span>🌤️</span> Weather<b>App</b></div>
+      <nav className="nav-links">
+        <NavLink to="/" end>Home</NavLink>
+        <NavLink to="/forecast">Forecast</NavLink>
+        <NavLink to="/air-quality">Air Quality</NavLink>
+        <NavLink to="/about">About</NavLink>
+      </nav>
+      <div className="controls">
+        <div className="segmented" role="group" aria-label="Temperature unit">
+          {["C", "F"].map((u) => (
+            <button key={u} className={unit === u ? "on" : ""} onClick={() => onUnit(u)}>°{u}</button>
+          ))}
         </div>
+        <button className="icon-btn" onClick={onTheme} aria-label="Toggle dark mode">
+          {theme === "dark" ? "☀️" : "🌙"}
+        </button>
       </div>
-    </nav>
-    
+    </header>
   );
 }
-
-export default Navbar;
-
-// weather-app/
-// │
-
-// ├── public/
-// │   └── weather-icons/
-// │       ├── sunny.png
-// │       ├── cloudy.png
-// │       ├── rainy.png
-// │       └── partly-cloudy.png
-// │
-// ├── src/
-// │   │
-// │   ├── assets/
-// │   │   └── weather-bg.jpg
-// │   │
-// │   ├── components/
-// │   │   ├── Navbar.jsx
-// │   │   ├── SearchBar.jsx
-// │   │   ├── CurrentWeather.jsx
-// │   │   ├── TodayHighlights.jsx
-// │   │   ├── Forecast.jsx
-// │   │   ├── AirQuality.jsx
-// │   │   ├── WeatherDetails.jsx
-// │   │   └── Footer.jsx
-// │   │
-// │   ├── data/
-// │   │   └── weatherData.js
-// │   │
-// │   ├── App.jsx
-// │   ├── App.css
-// │   ├── index.css
-// │   └── main.jsx
-// │
-// ├── index.html
-// ├── package.json
-// ├── package-lock.json
-// └── vite.config.js
