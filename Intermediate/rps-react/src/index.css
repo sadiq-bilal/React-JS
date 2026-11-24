@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #0f172a;   /* page background */
+  --color-panel: #1e293b;     /* header, cards */
+  --color-edge: #334155;      /* borders */
+  --color-accent: #818cf8;    /* highlights */
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+body {
+  @apply min-h-screen bg-surface font-sans text-slate-100 antialiased;
+}
