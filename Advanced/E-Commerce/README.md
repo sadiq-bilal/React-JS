@@ -2,11 +2,7 @@
 
 A simple e-commerce website built with **React** where users can browse products, search, filter and sort them, view product details, manage a cart, and place an order.
 
-🔗 **Live Demo:** _add your Vercel/Netlify link here_
-
-## 📸 Screenshots
-
-_Add screenshots here (Home, Products, Cart, Checkout)_
+🔗 **Live Demo:** https://react-js-vq7j.vercel.app/
 
 ## 🚀 Features
 
@@ -52,4 +48,4 @@ npm run dev
 
 ## 👨‍💻 Author
 
-Sadiq Bilal
+Mohammad Sadiq Bilal
